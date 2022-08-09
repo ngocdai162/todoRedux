@@ -1,17 +1,18 @@
+import { createSlice } from "@reduxjs/toolkit";
 
 
-const inittialValue = [];
-
-const rootReducer = (state=inittialValue,action)=> {
-    console.log(action.payload)
-    switch (action.type) {
-        case 'ADD_TODO': [
-            ...state,
-            action.payload
-        ]
-        default: 
-            return state;
-
+export const rootReducer = createSlice(
+    {
+        name: "reducerStore",
+        initialeState: {
+            id: "",
+            name: ""
+        },
+        reducers: {
+            addTodo: (state,action) => {
+                console.log(action.payload)
+                state.push(action.payload);
+            }
+        }
     }
-}
-export default rootReducer;
+);
