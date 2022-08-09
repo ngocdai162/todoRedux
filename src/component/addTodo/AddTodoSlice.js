@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-export const  rootReducer = createSlice(
+export const  addTodoSlice = createSlice(
     {
-        name: "reducerStore",
+        name: "addTodo",
         initialeState: {
             id: "",
             name: ""
