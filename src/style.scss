@@ -1,8 +1,11 @@
 .todo-app {
     background-color: rgb(217, 152, 30);
-    width: 40%;
+    width: 22%;
     margin-top: 80px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 button {
     width: 80px;

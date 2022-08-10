@@ -5,7 +5,6 @@ import App from './App';
 import 'antd/dist/antd.css';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-// import configureStore from './configureStore'
 import store from './redux/store';
 
 
