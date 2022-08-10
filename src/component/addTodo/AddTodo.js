@@ -17,7 +17,8 @@ const AddTodo = () => {
    const handleClick = () => {
       dispatch(addTodo({
         id:uuidv4(),    //uuidv4()  sinh ra một id ngẫu nhiên k trùng ,cách dùng :  npm install uuid -> import {v4 as uuidv4 } from 'uuid' -> uuidv4();
-        name: todoName
+        name: todoName,
+        status: "Wait"
       }))
       setTodoName('');
    }

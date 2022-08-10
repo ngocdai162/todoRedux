@@ -6,9 +6,7 @@ const initialState = {
 const  filterSlice = createSlice(
     {
         name: "filter",
-        initialState: {
-            searchText: ""
-        },
+        initialState,
         reducers: {
            searchTodo (state,action) {
             console.log(action.payload)
